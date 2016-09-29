@@ -25,7 +25,8 @@ class GithubInteractor
   private
   
   def repos
-    @repos ||= client.organization_repositories('Tariffic')
+    # Organisation name goes here
+    @repos ||= client.organization_repositories('')
   end
 
   def repo_names
